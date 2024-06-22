@@ -26,7 +26,7 @@ export type TableNameType =
 
 export type ValueType = {
   column: string;
-  value: string | number;
+  value: string | number | null;
 };
 type WhereType = ValueType;
 
@@ -127,4 +127,9 @@ export enum ColumnName {
   percentFromBalance = 'percent_from_balance',
   candlePriceRange = 'candle_price_range',
   percentTargetAfterTakeProfit = 'percent_target_after_take_profit',
+  //license
+  licenseKey = 'license_key',
+  dateEnd = 'date_end',
+  email = 'email',
+  desktopId = 'desktop_id',
 }

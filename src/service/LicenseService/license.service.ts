@@ -28,8 +28,8 @@ export class LicenseService {
     await this._licenseRepository.createLicenseKey(email, licenseKey, dateEnd);
   }
 
-  async checkingLicense(licenseKey: string) {
-    const result = await this._licenseRepository.checkLicense(licenseKey);
+  async checkingLicense(licenseKey: string, desktopId: string) {
+    const result = await this._licenseRepository.checkLicense(licenseKey, desktopId);
 
     return result;
   }
